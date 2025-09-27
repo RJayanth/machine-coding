@@ -20,7 +20,7 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy-project": "npx gh-pages -d build -b gh-pages -r https://github.com/RJayanth/machine-coding.git -f --dest otp-validator"
+    "deployProject": "npx gh-pages -d build -b gh-pages -r https://github.com/RJayanth/machine-coding.git -f --dest otp-validator"
 
   },
   "eslintConfig": {
