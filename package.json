@@ -1,0 +1,13 @@
+{
+  "name": "machine-coding",
+  "version": "1.0.0",
+  "description": "This repository contains topic-wise implementations of machine coding problems. Each project is structured as a standalone mini-app, showcasing practical coding approaches and frontend development skills.",
+  "main": "deploy-all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-all": "node deploy-all.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
