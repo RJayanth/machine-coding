@@ -34,7 +34,6 @@ function App() {
       } else {
         otpRef.current?.[i - 1]?.focus();
         otpRef.current?.[i - 1]?.select();
-
       }
     }
   };
@@ -43,24 +42,26 @@ function App() {
     <div className="App">
       <div className="otp-container">
         <div className="otp-header">OTP Validator</div>
-        {otpArr.map((otp, i) => {
-          return (
-            <input
-              type="text"
-              key={i}
-              value={otpArr[i]}
-              placeholder="*"
-              className="otp-field"
-              onChange={(e) => handleOnChange(e, i)}
-              ref={(input) => {
-                otpRef.current[i] = input;
-              }}
-              onKeyUp={(e) => {
-                handleOnKeyUp(e, i);
-              }}
-            />
-          );
-        })}
+        <div className="otp-fields-container">
+          {otpArr.map((otp, i) => {
+            return (
+              <input
+                type="text"
+                key={i}
+                value={otpArr[i]}
+                placeholder="*"
+                className="otp-field"
+                onChange={(e) => handleOnChange(e, i)}
+                ref={(input) => {
+                  otpRef.current[i] = input;
+                }}
+                onKeyUp={(e) => {
+                  handleOnKeyUp(e, i);
+                }}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
